@@ -70,7 +70,7 @@ Import a package.
 .. code-block:: go
 
    import (
-       "github.com/yuin/gopher-lua"
+       "github.com/somebin/gopher-lua"
    )
 
 Run scripts in the VM.
@@ -91,9 +91,9 @@ Run scripts in the VM.
        panic(err)
    }
 
-Refer to `Lua Reference Manual <http://www.lua.org/manual/5.1/>`_ and `Go doc <http://godoc.org/github.com/yuin/gopher-lua>`_ for further information.
+Refer to `Lua Reference Manual <http://www.lua.org/manual/5.1/>`_ and `Go doc <http://godoc.org/github.com/somebin/gopher-lua>`_ for further information.
 
-Note that elements that are not commented in `Go doc <http://godoc.org/github.com/yuin/gopher-lua>`_ equivalent to `Lua Reference Manual <http://www.lua.org/manual/5.1/>`_ , except GopherLua uses objects instead of Lua stack indices.
+Note that elements that are not commented in `Go doc <http://godoc.org/github.com/somebin/gopher-lua>`_ equivalent to `Lua Reference Manual <http://www.lua.org/manual/5.1/>`_ , except GopherLua uses objects instead of Lua stack indices.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Data model
@@ -213,7 +213,7 @@ Miscellaneous lua.NewState options
 API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Refer to `Lua Reference Manual <http://www.lua.org/manual/5.1/>`_ and `Go doc(LState methods) <http://godoc.org/github.com/yuin/gopher-lua>`_ for further information.
+Refer to `Lua Reference Manual <http://www.lua.org/manual/5.1/>`_ and `Go doc(LState methods) <http://godoc.org/github.com/somebin/gopher-lua>`_ for further information.
 
 +++++++++++++++++++++++++++++++++++++++++
 Calling Go from Lua
@@ -312,7 +312,7 @@ mymodule.go
     package mymodule
 
     import (
-        "github.com/yuin/gopher-lua"
+        "github.com/somebin/gopher-lua"
     )
 
     func Loader(L *lua.LState) int {
@@ -342,7 +342,7 @@ mymain.go
 
     import (
         "./mymodule"
-        "github.com/yuin/gopher-lua"
+        "github.com/somebin/gopher-lua"
     )
 
     func main() {
@@ -650,7 +650,7 @@ Go API
 
 ``ToChannel``, ``CheckChannel``, ``OptChannel`` are available.
 
-Refer to `Go doc(LState methods) <http://godoc.org/github.com/yuin/gopher-lua>`_ for further information.
+Refer to `Go doc(LState methods) <http://godoc.org/github.com/somebin/gopher-lua>`_ for further information.
 
 '''''''''''''''
 Lua API
@@ -807,22 +807,22 @@ Lua has an interpreter called ``lua`` . GopherLua has an interpreter called ``gl
 
 .. code-block:: bash
 
-   go get github.com/yuin/gopher-lua/cmd/glua
+   go get github.com/somebin/gopher-lua/cmd/glua
 
 ``glua`` has same options as ``lua`` .
 
 ----------------------------------------------------------------
 How to Contribute
 ----------------------------------------------------------------
-See `Guidlines for contributors <https://github.com/yuin/gopher-lua/tree/master/.github/CONTRIBUTING.md>`_ .
+See `Guidlines for contributors <https://github.com/somebin/gopher-lua/tree/master/.github/CONTRIBUTING.md>`_ .
 
 ----------------------------------------------------------------
 Libraries for GopherLua
 ----------------------------------------------------------------
 
 - `gopher-luar <https://github.com/layeh/gopher-luar>`_ : Simplifies data passing to and from gopher-lua
-- `gluamapper <https://github.com/yuin/gluamapper>`_ : Mapping a Lua table to a Go struct
-- `gluare <https://github.com/yuin/gluare>`_ : Regular expressions for gopher-lua
+- `gluamapper <https://github.com/somebin/gluamapper>`_ : Mapping a Lua table to a Go struct
+- `gluare <https://github.com/somebin/gluare>`_ : Regular expressions for gopher-lua
 - `gluahttp <https://github.com/cjoudrey/gluahttp>`_ : HTTP request module for gopher-lua
 - `gopher-json <https://github.com/layeh/gopher-json>`_ : A simple JSON encoder/decoder for gopher-lua
 - `gluayaml <https://github.com/kohkimakimoto/gluayaml>`_ : Yaml parser for gopher-lua
